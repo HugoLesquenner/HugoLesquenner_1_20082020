@@ -3,23 +3,34 @@
 <html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <link href="stylesheet.css" media="screen and (max-width: 767.98px)" rel="stylesheet" type="text/css" />
     <link href="stylesheet.css" media="screen" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <title>Reservia</title>
 </head>
 <body>
+    
     <header>
-        <div class="ban">
+        <div class="home">
             <img class="logo" src="Images/Reservia@3x.png" alt="reservia logo">
-            <a href="#sign">S'inscrire</a>
         </div>
         <div class="menu">
-                <a href="#hebergements">Hébergements</a>
-                <a href="#activites">Activités</a>
+            <button class="menuButton" href="#hebergements">Hébergements</button>
+            <button class="menuButton" href="#activites">Activités</button>
+        </div>
+        <div class="sign">  
+            <a href="#sign">S'inscrire</a>
         </div>
     </header>
+    
     <main>
         <h2>Trouver votre hébergement pour des vacances de rêve</h2>
         <a>En plein centre ville ou en pleine nature</a>
+        <div>
+            <button type="submit" id="geo"></button>
+            <input type="text" id="location" name="localisation" required maxlength="12" size="12" placeholder="Marseille, France" />
+        </div>
     </main>
+
 </body>
 </html>

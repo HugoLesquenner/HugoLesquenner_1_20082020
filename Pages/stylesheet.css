@@ -1,27 +1,99 @@
-header{
-    
+body {
+    font-family: 'Raleway', sans-serif;
     
 }
-
-.logo{
-    max-width: 100%;
-    height: 75px;
-}
-
-.ban {
+header {
     display: flex;
     justify-content: space-between;
 }
-
-.menu{
-
+a {
+    text-decoration: none;
+    color:black;
 }
+button {
+    font-family: 'Raleway', sans-serif;
+}
+.logo {
+    max-width: 100%;
+    height: 75px;
+    
+}
+
+.home {
+    order: 1;
+    flex-grow: 1;
+}
+
+.menu {
+    order: 2;
+    
+}
+
+.sign {
+    order: 3;
+    
+}
+
+.menuButton {
+    border-color: transparent;
+    border-block-start: 2px solid lightgrey;
+    background-color: transparent;
+}
+    .menuButton:hover {
+        color: rgb(16,111,252);
+        border-block-start: 2px solid rgb(16,111,252);
+    }
+
+
+
 
 
 /*Smartphone*/
 @media (max-width: 767.98px) {
-  
-    
+    body {
+        margin: 0;
+    }
+    header {
+        flex-wrap: wrap;
+        justify-content:space-between;
+        
+        
+    }
+    main {
+        margin: 5px;
+    }
+    .logo {
+        max-width: 100%;
+        height: 75px;
+        margin:5px;
+    }
+    .home {
+        order: 1;
+        
+    }
+
+    .menu {
+        order: 3;
+        width: 100%;
+        display:flex;
+        justify-content:space-around;
+    }
+    .sign {
+        order: 2;
+        margin: 5px;
+    }
+    .menuButton {
+        width: 50%;
+        border-block-start: hidden;
+        border-block-end: 2px solid lightgrey;
+        
+    }
+        .menuButton:hover {
+            color: rgb(16,111,252);
+            border-block-start: hidden;
+            border-block-end: 2px solid rgb(16,111,252);
+            
+        }
 }
 
 /*Tablet*/
