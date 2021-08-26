@@ -13,6 +13,7 @@ a {
 button {
     font-family: 'Raleway', sans-serif;
 }
+
 .logo {
     max-width: 100%;
     height: 75px;
@@ -26,13 +27,11 @@ button {
 
 .menu {
     order: 2;
-    
-}
+    }
 
 .sign {
     order: 3;
-    
-}
+    }
 
 .menuButton {
     border-color: transparent;
@@ -43,9 +42,74 @@ button {
         color: rgb(16,111,252);
         border-block-start: 2px solid rgb(16,111,252);
     }
+.search{
+    margin:10px;
+}
+.icon {
+    height:30px;
+    border-radius: 50%;
+    padding:10px;
+    background-color:rgb(222,235,255);
+}
+.trendIcon{
+    height:30px;
+    
+}
+.filters {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.filter {
+    border-radius: 29px;
+    border: 2px solid lightgrey;
+    }
 
+.info {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: solid 1px lightgrey;
+    text-align: center;
+    color: rgb(16,111,252);
+}
+.infoResult {
+    display: flex;
+    
+}
+.housing{
+    display:flex;
 
-
+}
+.mainHousing  h2{
+    width:100%;
+}
+.trendHousing h2 {
+    width: 100%;
+}
+.mainHousing {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+.trendHousing {
+    width: 40%;
+    
+}
+.mainHouse{
+    width:33.33%;
+}
+.trendHouse{
+    width:100%;
+}
+.mainHouseImg {
+    max-width: 100%;
+    height: 150px;
+}
+.trendHouseImg {
+    max-width: 100%;
+    height: 150px;
+}
 
 
 /*Smartphone*/
@@ -94,6 +158,22 @@ button {
             border-block-end: 2px solid rgb(16,111,252);
             
         }
+    .housing {
+       display:flex;
+       flex-wrap:wrap-reverse;
+    }
+    .mainHousing {
+        width: 100%;
+     
+    }
+    .mainHouse{
+        width:100%;
+    }
+    .trendHousing {
+        width: 100%;
+    }
+
+    
 }
 
 /*Tablet*/

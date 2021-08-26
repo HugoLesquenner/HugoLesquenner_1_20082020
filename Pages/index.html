@@ -12,12 +12,14 @@
     
     <header>
         <div class="home">
-            <img class="logo" src="Images/Reservia@3x.png" alt="reservia logo">
+            <a href="#index"><img class="logo" src="Images/Reservia.svg" alt="reservia logo"></a>
         </div>
+        
         <div class="menu">
-            <button class="menuButton" href="#hebergements">Hébergements</button>
-            <button class="menuButton" href="#activites">Activités</button>
+            <a class="menuButton" href="#hebergements">Hébergements</a>
+            <a class="menuButton" href="#activites">Activités</a>
         </div>
+        
         <div class="sign">  
             <a href="#sign">S'inscrire</a>
         </div>
@@ -25,11 +27,74 @@
     
     <main>
         <h2>Trouver votre hébergement pour des vacances de rêve</h2>
-        <a>En plein centre ville ou en pleine nature</a>
-        <div>
+        <p>En plein centre ville ou en pleine nature</p>
+        
+        <div class="search">
             <button type="submit" id="geo"></button>
-            <input type="text" id="location" name="localisation" required maxlength="12" size="12" placeholder="Marseille, France" />
+            <input type="text" id="location" name="localisation" required maxlength="12" size="12" placeholder="Ville, Pays" value="Marseille, France" />
+            <button type="submit" id="search">Rechercher</button>
         </div>
+        
+        <div class="filters">
+            <div>
+                Filtres
+            </div>
+            <button type="submit" value="filtreEco" id="filtreEco" class="filter">
+                <img class="icon" src="Images/Icon/room_black_24dp.svg" alt="filtre economique"/>
+                Economique
+            </button>
+            <div class="filter">
+                Familial
+            </div>
+            <div class="filter">
+                Romantique
+            </div>
+            <div class="filter">
+                Animaux autorisés
+            </div>
+        </div>
+
+        <div class="infoResult">
+            <p class="info">i</p><p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+
+        <div class="housing">
+            <div class="mainHousing">
+                <h2>Hébergements à Marseille</h2>
+                <div class="mainHouse">
+                    <img class="mainHouseImg" src="Images/House/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="house">
+                </div>
+                <div class="mainHouse">
+                    <img class="mainHouseImg" src="Images/House/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="house">
+                </div>
+                <div class="mainHouse">
+                    <img class="mainHouseImg" src="Images/House/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="house">
+                </div>
+                <div class="mainHouse">
+                    <img class="mainHouseImg" src="Images/House/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="house">
+                </div>
+                <div class="mainHouse">
+                    <img class="mainHouseImg" src="Images/House/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="house">
+                </div>
+                <div class="mainHouse">
+                    <img class="mainHouseImg" src="Images/House/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="house">
+                </div>
+
+            </div>
+            <div class="trendHousing">
+                <h2>Les plus populaires </h2><img class="trendIcon" src="Images/Icon/growth.svg" />
+                <div class="trendHouse">
+                    <img class="trendHouseImg" src="Images/House/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="house">
+                </div>
+                <div class="trendHouse">
+                    <img class="trendHouseImg" src="Images/House/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="house">
+                </div>
+                <div class="trendHouse">
+                    <img class="trendHouseImg" src="Images/House/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="house">
+                </div>
+            </div>
+        </div>
+
     </main>
 
 </body>
