@@ -1,24 +1,7 @@
-body {
-    font-family: 'Raleway', sans-serif;
-    
-}
-header {
-    display: flex;
-    justify-content: space-between;
-}
-a {
-    text-decoration: none;
-    color:black;
-}
-button {
-    font-family: 'Raleway', sans-serif;
-}
-
 .logo {
     max-width: 100%;
     height: 75px;
-    
-}
+    }
 
 .home {
     order: 1;
@@ -42,24 +25,29 @@ button {
         color: rgb(16,111,252);
         border-block-start: 2px solid rgb(16,111,252);
     }
+
 .search{
     margin:10px;
 }
+
 .icon {
     height:30px;
     border-radius: 50%;
     padding:10px;
     background-color:rgb(222,235,255);
 }
+
 .trendIcon{
     height:30px;
     
 }
+
 .filters {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
+
 .filter {
     border-radius: 29px;
     border: 2px solid lightgrey;
@@ -73,67 +61,96 @@ button {
     text-align: center;
     color: rgb(16,111,252);
 }
+
 .infoResult {
     display: flex;
     
 }
+
 .housing{
     display:flex;
 
 }
+
 .mainHousing  h2{
     width:100%;
 }
+
 .trendHousing h2 {
     width: 100%;
 }
+
 .mainHousing {
     display: flex;
     flex-wrap: wrap;
     width: 60%;
+    background-color:rgb(242,242,242);
 }
+
 .trendHousing {
     width: 40%;
-    
+    background-color: rgb(242,242,242);
 }
+
 .mainHouse{
     width:33.33%;
 }
+
 .trendHouse{
     width:100%;
 }
+
 .mainHouseImg {
     max-width: 100%;
     height: 150px;
 }
+
 .trendHouseImg {
     max-width: 100%;
     height: 150px;
 }
 
+ul {
+    list-style: none;
+    padding:0;
+}
+
+button {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(242,242,242);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
 
 /*Smartphone*/
 @media (max-width: 767.98px) {
-    body {
-        margin: 0;
-    }
-    header {
-        flex-wrap: wrap;
-        justify-content:space-between;
-        
-        
-    }
-    main {
-        margin: 5px;
-    }
     .logo {
         max-width: 100%;
         height: 75px;
         margin:5px;
     }
+    
     .home {
         order: 1;
-        
     }
 
     .menu {
@@ -142,38 +159,48 @@ button {
         display:flex;
         justify-content:space-around;
     }
+    
     .sign {
         order: 2;
         margin: 5px;
     }
+    
     .menuButton {
         width: 50%;
         border-block-start: hidden;
         border-block-end: 2px solid lightgrey;
-        
     }
         .menuButton:hover {
             color: rgb(16,111,252);
             border-block-start: hidden;
-            border-block-end: 2px solid rgb(16,111,252);
-            
+            border-block-end: 2px solid rgb(16,111,252);   
         }
+    
     .housing {
        display:flex;
        flex-wrap:wrap-reverse;
     }
+    
     .mainHousing {
         width: 100%;
-     
     }
+    
     .mainHouse{
         width:100%;
     }
+    
     .trendHousing {
         width: 100%;
     }
-
     
+    main {
+        margin: 5px;
+    }
+    
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 
 /*Tablet*/

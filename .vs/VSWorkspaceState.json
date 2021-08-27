@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Pages",
-    "\\Pages\\Images"
+    "\\Pages\\Images",
+    "\\Pages\\Images\\Icon"
   ],
-  "SelectedNode": "\\Pages\\Images\\room_black_24dp.svg",
+  "SelectedNode": "\\Pages\\Images\\Icon",
   "PreviewInSolutionExplorer": false
 }
