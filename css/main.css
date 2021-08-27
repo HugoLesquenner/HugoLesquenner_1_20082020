@@ -53,6 +53,10 @@
     border: 2px solid lightgrey;
     }
 
+.filter:hover{
+    background-color:lightblue;
+}
+
 .info {
     height: 18px;
     width: 18px;
