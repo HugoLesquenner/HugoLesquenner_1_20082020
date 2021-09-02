@@ -1,7 +1,7 @@
 .logo {
     max-width: 100%;
     height: 75px;
-    }
+}
 
 .home {
     order: 1;
@@ -10,36 +10,36 @@
 
 .menu {
     order: 2;
-    }
+}
 
 .sign {
     order: 3;
-    }
+}
 
 .menuButton {
     border-color: transparent;
     border-block-start: 2px solid lightgrey;
     background-color: transparent;
 }
+
     .menuButton:hover {
         color: rgb(16,111,252);
         border-block-start: 2px solid rgb(16,111,252);
     }
 
-.search{
-    margin:10px;
+.search {
+    margin: 10px;
 }
 
 .icon {
-    height:30px;
+    height: 30px;
     border-radius: 50%;
-    padding:10px;
-    background-color:rgb(222,235,255);
+    padding: 10px;
+    background-color: rgb(222,235,255);
 }
 
-.trendIcon{
-    height:30px;
-    
+.trendIcon {
+    height: 30px;
 }
 
 .filters {
@@ -51,11 +51,11 @@
 .filter {
     border-radius: 29px;
     border: 2px solid lightgrey;
-    }
-
-.filter:hover{
-    background-color:lightblue;
 }
+
+    .filter:hover {
+        background-color: lightblue;
+    }
 
 .info {
     height: 18px;
@@ -68,45 +68,52 @@
 
 .infoResult {
     display: flex;
-    
 }
 
-.housing{
-    display:flex;
-
+.housing {
+    display: flex;
+    gap: 40px;
+    margin: 40px;
 }
 
-.mainHousing  h2{
-    width:100%;
+.mainHousing h2 {
+    grid-column: 1/4;
 }
 
 .trendHousing h2 {
-    width: 100%;
+    grid-column: 1/2;
 }
 
 .mainHousing {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
     width: 60%;
-    background-color:rgb(242,242,242);
+    background-color: rgb(242,242,242);
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.mainHouse {
+    background-color: white;
+    border: solid white 5px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px lightgrey;
 }
 
 .trendHousing {
-    width: 40%;
+    display: grid;
+    grid-template: 1fr;
     background-color: rgb(242,242,242);
 }
 
-.mainHouse{
-    width:33.33%;
+
+.trendHouse {
+    width: 100%;
 }
 
-.trendHouse{
-    width:100%;
-}
-
-.mainHouseImg {
-    max-width: 100%;
-    height: 150px;
+#house01 {
+    background-image: url(/img/house/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
 }
 
 .trendHouseImg {
@@ -114,9 +121,14 @@
     height: 150px;
 }
 
+.description {
+    position: absolute;
+    height: 50%;
+}
+
 ul {
     list-style: none;
-    padding:0;
+    padding: 0;
 }
 
 button {
@@ -150,9 +162,9 @@ body {
     .logo {
         max-width: 100%;
         height: 75px;
-        margin:5px;
+        margin: 5px;
     }
-    
+
     .home {
         order: 1;
     }
@@ -160,47 +172,53 @@ body {
     .menu {
         order: 3;
         width: 100%;
-        display:flex;
-        justify-content:space-around;
+        display: flex;
+        justify-content: space-around;
     }
-    
+
     .sign {
         order: 2;
         margin: 5px;
     }
-    
+
     .menuButton {
         width: 50%;
         border-block-start: hidden;
         border-block-end: 2px solid lightgrey;
     }
+
         .menuButton:hover {
             color: rgb(16,111,252);
             border-block-start: hidden;
-            border-block-end: 2px solid rgb(16,111,252);   
+            border-block-end: 2px solid rgb(16,111,252);
         }
-    
+
     .housing {
-       display:flex;
-       flex-wrap:wrap-reverse;
+        display: flex;
+        flex-wrap: wrap-reverse;
     }
-    
+
+    .mainHousing h2 {
+        grid-column: 1/2;
+    }
+
     .mainHousing {
         width: 100%;
+        grid-template-columns: 1fr;
     }
-    
-    .mainHouse{
-        width:100%;
+
+    .mainHouse {
+        width: 100%;
     }
-    
+
     .trendHousing {
         width: 100%;
     }
-    
+
     main {
         margin: 5px;
     }
-    
+
     header {
         flex-wrap: wrap;
         justify-content: space-between;
@@ -209,5 +227,4 @@ body {
 
 /*Tablet*/
 @media (max-width: 991.98px) {
-    
 }

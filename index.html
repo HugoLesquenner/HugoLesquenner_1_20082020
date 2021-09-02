@@ -11,37 +11,38 @@
     <link href="css/main.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    
+
     <header>
         <a class="home" href="#index">
-        <img class="logo" src="img/Reservia.svg" alt="reservia logo"></a>
-        
+            <img class="logo" src="img/Reservia.svg" alt="reservia logo">
+        </a>
+
         <nav class="menu">
             <a class="menuButton" href="#hebergements">Hébergements</a>
             <a class="menuButton" href="#activites">Activités</a>
         </nav>
-        
-        <nav class="sign">  
+
+        <nav class="sign">
             <a href="#sign">S'inscrire</a>
         </nav>
     </header>
-    
+
     <main>
         <h2>Trouver votre hébergement pour des vacances de rêve</h2>
         <p>En plein centre ville ou en pleine nature</p>
-        
+
         <div class="search">
             <button type="submit" id="geo"></button>
             <input type="text" id="location" name="localisation" required maxlength="12" size="12" placeholder="Ville, Pays" value="Marseille, France" />
             <button type="submit" id="search">Rechercher</button>
         </div>
-        
+
         <div class="filters">
             <div>
                 Filtres
             </div>
             <button type="submit" value="filtreEco" id="filtreEco" class="filter">
-                <img class="icon" src="img/icon/room_black_24dp.svg" alt="filtre economique"/>
+                <img class="icon" src="img/icon/room_black_24dp.svg" alt="filtre economique" />
                 Economique
             </button>
             <div class="filter">
@@ -63,8 +64,9 @@
         <section class="housing" id="hebergements">
             <div class="mainHousing">
                 <h2>Hébergements à Marseille</h2>
-                <div class="mainHouse">
-                    <img class="mainHouseImg" src="img/house/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="house">
+                <div class="mainHouse" id="house01">
+
+                    <div class="description"></div>
                 </div>
                 <div class="mainHouse">
                     <img class="mainHouseImg" src="img/house/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="house">
@@ -84,8 +86,10 @@
 
             </div>
             <div class="trendHousing">
-                <h2>Les plus populaires </h2>
-                <img class="trendIcon" src="img/Icon/growth.svg" alt="growth" />
+                <h2>
+                    Les plus populaires
+                    <img class="trendIcon" src="img/Icon/growth.svg" alt="growth" />
+                </h2>
                 <div class="trendHouse">
                     <img class="trendHouseImg" src="img/house/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="house">
                 </div>
