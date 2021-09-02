@@ -99,6 +99,10 @@
     border: solid white 5px;
     border-radius: 30px;
     box-shadow: 5px 5px 5px lightgrey;
+    display:grid;
+    height:50%;
+    width:60%;
+
 }
 
 .trendHousing {
@@ -113,7 +117,8 @@
 }
 
 #house01 {
-    background-image: url(/img/house/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    background-image: url(../img/house/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    background-size:300px;
 }
 
 .trendHouseImg {
@@ -122,8 +127,12 @@
 }
 
 .description {
-    position: absolute;
-    height: 50%;
+    background-color: white;
+    position: relative;
+    grid-row:4;
+    height:100%;
+    border-radius:0 0 20px 20px;
+
 }
 
 ul {
