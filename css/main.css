@@ -1,3 +1,30 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(242,242,242);
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+button {
+    font-family: 'Raleway', sans-serif;
+}
+
 .logo {
     max-width: 100%;
     height: 75px;
@@ -99,75 +126,107 @@
     border: solid white 5px;
     border-radius: 30px;
     box-shadow: 5px 5px 5px lightgrey;
-    display:grid;
-    height:50%;
-    width:60%;
-
+    overflow: hidden;
+}
+.mainHouseImg {
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: 20%;
 }
 
 .trendHousing {
     display: grid;
     grid-template: 1fr;
     background-color: rgb(242,242,242);
+    border-radius: 30px;
+    padding: 30px;
+    grid-gap: 30px;
+    
 }
 
 
 .trendHouse {
-    width: 100%;
+    display: grid;
+    grid-template-columns:35% 65%;
+    border: solid white 5px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px lightgrey;
+    overflow: hidden;
+    height: 200px;
+
 }
 
-#house01 {
-    background-image: url(../img/house/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
-    background-size:300px;
-}
 
 .trendHouseImg {
     max-width: 100%;
-    height: 150px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 20% ;
 }
 
 .description {
-    background-color: white;
-    position: relative;
-    grid-row:4;
-    height:100%;
-    border-radius:0 0 20px 20px;
+    
 
 }
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-button {
-    font-family: 'Raleway', sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-footer {
-    display: flex;
-    justify-content: space-around;
+.activity {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 30px;
     width: 100%;
-    background-color: rgb(242,242,242);
+    padding: 30px;
+}
+.activities {
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px lightgrey;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
+#act01 {
+    grid-column: 1;
+    grid-row: 1/2;
+    
+}
+#act02 {
+    grid-column: 2;
+    grid-row: 1;
+}
+#act03 {
+    grid-column: 2;
+    grid-row: 2;
+}
+#act04 {
+    grid-column: 3;
+    grid-row: 1/2;
+}
+#act05 {
+    grid-column: 4;
+    grid-row: 1;
+}
+#act06 {
+    grid-column: 4;
+    grid-row: 2;
+}
+.activitiesImg {
+    max-width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 20%;
+    
 }
 
-body {
-    font-family: 'Raleway', sans-serif;
-    margin: 0;
-}
 
 /*Smartphone*/
 @media (max-width: 767.98px) {
+    main {
+        margin: 5px;
+    }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     .logo {
         max-width: 100%;
         height: 75px;
@@ -224,14 +283,7 @@ body {
         width: 100%;
     }
 
-    main {
-        margin: 5px;
-    }
-
-    header {
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+    
 }
 
 /*Tablet*/
