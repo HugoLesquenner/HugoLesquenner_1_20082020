@@ -32,7 +32,9 @@
         <p>En plein centre ville ou en pleine nature</p>
 
         <div class="search">
-            <button type="submit" id="geo"></button>
+            <button type="submit" id="geo">
+            <img class="iconGeo" src="img/icon/room_black_24dp.svg" alt="geolocalisation" />
+            </button>
             <input type="text" id="location" name="localisation" required maxlength="12" size="12" placeholder="Ville, Pays" value="Marseille, France" />
             <button type="submit" id="search">Rechercher</button>
         </div>
@@ -43,17 +45,20 @@
             </div>
             <button type="submit" value="filtreEco" id="filtreEco" class="filter">
                 <img class="icon" src="img/icon/room_black_24dp.svg" alt="filtre economique" />
-                Economique
+                <p>Economique</p>
             </button>
-            <div class="filter">
-                Familial
-            </div>
-            <div class="filter">
-                Romantique
-            </div>
-            <div class="filter">
-                Animaux autorisés
-            </div>
+            <button type="submit" value="filtreEco" id="filtreFam" class="filter">
+                <img class="icon" src="img/icon/room_black_24dp.svg" alt="filtre economique" />
+                <p>Familial</p>
+            </button>
+            <button type="submit" value="filtreEco" id="filtreRom" class="filter">
+                <img class="icon" src="img/icon/room_black_24dp.svg" alt="filtre economique" />
+                <p>Romantique</p>
+            </button>
+            <button type="submit" value="filtreEco" id="filtreAni" class="filter">
+                <img class="icon" src="img/icon/room_black_24dp.svg" alt="filtre economique" />
+                <p>Animaux autorisés</p>
+            </button>
         </div>
 
         <div class="infoResult">
@@ -168,16 +173,16 @@
                     </div>
                 </div>
                 <div class="activities" id="act02">
-                    <img class="activitiesImg" src="img/activity/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="house">
-                    <div class="description">
-                        <p>Fort de Pomèques</p>
-                    </div>
+                        <img class="activitiesImg" src="img/activity/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="house">
+                        <div class="description">
+                            <p>Fort de Pomèques</p>
+                        </div>
                 </div>
                 <div class="activities" id="act03">
-                    <img class="activitiesImg" src="img/activity/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="house">
-                    <div class="description">
-                        <p>Îles du Frioul</p>
-                    </div>
+                        <img class="activitiesImg" src="img/activity/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="house">
+                        <div class="description">
+                            <p>Îles du Frioul</p>
+                        </div>
                 </div>
                 <div class="activities" id="act04">
                     <img class="activitiesImg" src="img/activity/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="house">
@@ -186,19 +191,18 @@
                     </div>
                 </div>
                 <div class="activities" id="act05">
-                    <img class="activitiesImg" src="img/activity/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="house">
-                    <div class="description">
-                        <p>Notre-Dame-de-la-Garde</p>
-                    </div>
+                        <img class="activitiesImg" src="img/activity/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="house">
+                        <div class="description">
+                            <p>Notre-Dame-de-la-Garde</p>
+                        </div>
                 </div>
                 <div class="activities" id="act06">
-                    <img class="activitiesImg" src="img/activity/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="house">
-                    <div class="description">
-                        <p>Parc Longchamp</p>
-                    </div>
+                        <img class="activitiesImg" src="img/activity/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="house">
+                        <div class="description">
+                            <p>Parc Longchamp</p>
+                        </div>
                 </div>
             </div>
-            
         </section>
 
     </main>

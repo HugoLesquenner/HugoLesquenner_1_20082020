@@ -12,9 +12,14 @@ footer {
     width: 100%;
     background-color: rgb(242,242,242);
 }
+
 a {
     text-decoration: none;
     color: black;
+}
+nav{
+    
+    margin:30px;
 }
 ul {
     list-style: none;
@@ -24,7 +29,10 @@ ul {
 button {
     font-family: 'Raleway', sans-serif;
 }
-
+input {
+    font-size:1em;
+    font-weight: bold;
+}
 .logo {
     max-width: 100%;
     height: 75px;
@@ -36,13 +44,17 @@ button {
 }
 
 .menu {
+    font-weight: bold;
     order: 2;
 }
 
 .sign {
+    font-weight: bold;
     order: 3;
 }
-
+    .sign a {
+        color: rgb(16,111,252);
+    }
 .menuButton {
     border-color: transparent;
     border-block-start: 2px solid lightgrey;
@@ -55,11 +67,41 @@ button {
     }
 
 .search {
-    margin: 10px;
+    margin: 20px;
+    display: inline-flex;
 }
-
+#geo {
+    background-color:rgb(240,240,240);
+    border: none;
+    border-radius: 15px 0 0 15px;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    
+    
+}
+#location {
+    border: none;
+    border-bottom: 2px solid rgb(240,240,240);
+    border-top: 2px solid rgb(240,240,240);
+    height: 52px;
+}
+#search {
+    background-color: rgb(16,111,252);
+    border: none;
+    border-radius: 0 15px 15px 0;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    
+}
 .icon {
-    height: 30px;
+    height: 35px;
     border-radius: 50%;
     padding: 10px;
     background-color: rgb(222,235,255);
@@ -73,11 +115,19 @@ button {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-}
+    margin:10px;
+    gap:15px;
+  }
 
 .filter {
+    display: flex;
     border-radius: 29px;
     border: 2px solid lightgrey;
+    padding: 0px;
+    background-color: white;
+    vertical-align: middle;
+    padding-right:20px;
+
 }
 
     .filter:hover {
@@ -177,6 +227,7 @@ button {
     width: 100%;
     padding: 30px;
 }
+
 .activities {
     overflow: hidden;
     border-radius: 30px;
@@ -186,34 +237,38 @@ button {
 #act01 {
     grid-column: 1;
     grid-row: 1/2;
-    
 }
+
 #act02 {
     grid-column: 2;
     grid-row: 1;
 }
+
 #act03 {
     grid-column: 2;
     grid-row: 2;
 }
+
 #act04 {
     grid-column: 3;
     grid-row: 1/2;
 }
+
 #act05 {
     grid-column: 4;
     grid-row: 1;
 }
+
 #act06 {
     grid-column: 4;
     grid-row: 2;
 }
+
 .activitiesImg {
     max-width: 100%;
     height: 500px;
     object-fit: cover;
     object-position: 20%;
-    
 }
 
 
@@ -226,6 +281,10 @@ button {
     header {
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+    footer {
+        display: block;
+        
     }
     .logo {
         max-width: 100%;
@@ -282,7 +341,11 @@ button {
     .trendHousing {
         width: 100%;
     }
-
+    .activity {
+        display: block;
+        width:100%;
+        
+    }
     
 }
 
