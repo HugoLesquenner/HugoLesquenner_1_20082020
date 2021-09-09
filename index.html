@@ -28,35 +28,35 @@
     </header>
 
     <main>
-        <h2>Trouver votre hébergement pour des vacances de rêve</h2>
+        <h1>Trouver votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
 
         <div class="search">
-            <button type="submit" id="geo">
-            <img class="iconGeo" src="img/icon/room_black_24dp.svg" alt="geolocalisation" />
-            </button>
-            <input type="text" id="location" name="localisation" required maxlength="12" size="12" placeholder="Ville, Pays" value="Marseille, France" />
+            <div class="geo">
+                <img class="iconGeo" src="img/icon/room_black_24dp.svg" alt="geolocalisation" />
+            </div>
+            <input type="text" class="location" name="localisation" required maxlength="12" size="12" placeholder="Marseille, France" />
             <button type="submit" id="search">Rechercher</button>
         </div>
 
         <div class="filters">
-            <div>
+            <p>
                 Filtres
-            </div>
-            <button type="submit" value="filtreEco" id="filtreEco" class="filter">
-                <img class="icon" src="img/icon/room_black_24dp.svg" alt="filtre economique" />
+            </p>
+            <button type="button" value="filtreEco" id="filtreEco" class="filter">
+                <img class="icon" src="img/icon/bill-wave.svg" alt="filtre economique" />
                 <p>Economique</p>
             </button>
-            <button type="submit" value="filtreEco" id="filtreFam" class="filter">
-                <img class="icon" src="img/icon/room_black_24dp.svg" alt="filtre economique" />
+            <button type="button" value="filtreEco" id="filtreFam" class="filter">
+                <img class="icon" src="img/icon/child.svg" alt="filtre economique" />
                 <p>Familial</p>
             </button>
-            <button type="submit" value="filtreEco" id="filtreRom" class="filter">
-                <img class="icon" src="img/icon/room_black_24dp.svg" alt="filtre economique" />
+            <button type="button" value="filtreEco" id="filtreRom" class="filter">
+                <img class="icon" src="img/icon/heart.svg" alt="filtre economique" />
                 <p>Romantique</p>
             </button>
-            <button type="submit" value="filtreEco" id="filtreAni" class="filter">
-                <img class="icon" src="img/icon/room_black_24dp.svg" alt="filtre economique" />
+            <button type="button" value="filtreEco" id="filtreAni" class="filter">
+                <img class="icon" src="img/icon/Dog.svg" alt="filtre economique" />
                 <p>Animaux autorisés</p>
             </button>
         </div>
