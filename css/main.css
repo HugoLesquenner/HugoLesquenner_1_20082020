@@ -7,6 +7,10 @@ body {
     margin: 0;
 }
 
+img {
+    max-width: 100%;
+}
+
 header {
     display: flex;
     margin-left: 2rem;
@@ -56,6 +60,10 @@ input {
     font-size: 1em;
     font-weight: bold;
     padding-left: 20px;
+}
+
+li{
+    margin:0.5rem;
 }
 
 input::placeholder{
@@ -127,6 +135,7 @@ input::placeholder{
     text-decoration: none;
     font-size: 1em;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .icon {
@@ -225,15 +234,23 @@ input::placeholder{
     border: solid white 5px;
     border-radius: 30px;
     box-shadow: 5px 5px 5px lightgrey;
-    overflow: hidden;
-}
-.mainHouseImg {
-    max-width: 100%;
-    height: 250px;
-    object-fit: cover;
-    object-position: 20%;
+    overflow:hidden;
+    width: 100%;
+    height: 300px;
 }
 
+.descriptionMainHouse {
+    height: 40%;
+    
+}
+.descriptionMainHouse p{
+    margin-left:0.5rem;
+}
+
+.mainHouseImg {
+    height: 60%;
+    object-fit: cover;
+}
 .trendHousing {
     background-color: rgb(242,242,242);
     border-radius: 30px;
@@ -259,79 +276,55 @@ input::placeholder{
 }
 
 .activity {
-    display: grid;
-    grid-template-columns:repeat(4, 1fr);
-    grid-auto-rows: minmax(100px, auto);
-    grid-gap: 3rem;
+    display: flex;
+    
     width: 100%;
 }
 
-.activities {
+.activitiesBig {
     overflow: hidden;
     border-radius: 30px;
     box-shadow: 5px 5px 5px lightgrey;
-}
-
-#act01 {
-    grid-column: 1;
-    grid-row: 1/3;
-}
-
-#act02 {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-#act03 {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-#act04 {
-    grid-column: 3;
-    grid-row: 1/3;
-}
-
-#act05 {
-    grid-column: 4;
-    grid-row: 1;
-}
-
-#act06 {
-    grid-column: 4;
-    grid-row: 2;
-}
-
-.activitiesImgS {
-    max-width: 100%;
-    height: 200px;
-    object-fit: cover;
-    object-position: 20%;
-}
-activitiesImgB {
-    max-width: 100%;
+    width: 25%;
     height: 500px;
-    object-fit: cover;
-    object-position: 20%;
+    margin: 1rem;
 }
+.activitiesSmall {
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px lightgrey;
+    height: 240px;
+    margin-top:1rem;
+}
+.containerAct {
+    width:25%;
+}
+.activitiesImg{
+    height:80%;
+}
+
+
+
+
 
 
 /*Smartphone*/
 @media (max-width: 767.98px) {
     body {
-        margin-left: 0rem;
+        margin:0;
     }
     header{
-        width:100%;
+        margin:0;
     }
     main {
-        
+        margin:0;
     }
 
     header {
         flex-wrap: wrap;
         justify-content: space-between;
     }
+    
     footer {
         display: block;
         
@@ -351,6 +344,7 @@ activitiesImgB {
         width: 100%;
         display: flex;
         justify-content: space-around;
+        margin:0;
     }
 
     .sign {
@@ -381,25 +375,39 @@ activitiesImgB {
     .mainHousing {
         display: block;
         width: 100%;
-        padding: 1rem;
+        padding:0;
         background-color: white;
     }
 
     .mainHouse {
         width: 100%;
+        margin: 1rem;
     }
 
     .trendHousing {
-        width: 100%;
         background-color: rgb(242,242,242);
         border-radius: 0;
-        padding: 1rem;
+        padding:0;
+
     }
+
     .activity {
         display: block;
         width:100%;
     }
     
+    .activitiesBig {
+        width: 100%;
+        margin:1rem;
+    }
+    
+    .activitiesSmall {
+        margin: 1rem;
+    }
+
+    .containerAct {
+        width: 100%;
+    }
 }
 
 /*Tablet*/
