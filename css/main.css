@@ -9,12 +9,14 @@ body {
 
 img {
     max-width: 100%;
+    object-fit:cover;
 }
 
 header {
     display: flex;
     margin-left: 2rem;
     margin-right: 2rem;
+    align-items:center;
 }
 
 main {
@@ -96,7 +98,7 @@ input::placeholder{
 
 .menuButton {
     padding: 1.5rem 1.5rem;
-    padding-top:1.75rem;
+    padding-top:2.75rem;
     border-block-start: 2px solid transparent;
     background-color: transparent;
     
@@ -181,11 +183,11 @@ input::placeholder{
     background-color: white;
     padding-right: 20px;  
 }
-.filter p {
+.filter span {
     vertical-align: middle;
     font-size: 16px;
     font-weight: bold;
-    padding-left: 20px;
+    padding: 15px 10px;
 }
 
 .filters p {
@@ -209,8 +211,13 @@ input::placeholder{
     margin-bottom: 4rem;
 }
 
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .description p {
-    margin: 0;
     margin-left: 0.5rem;
 }
 
@@ -252,19 +259,18 @@ input::placeholder{
     overflow:hidden;
     width: 100%;
     height: 300px;
+    background-color:transparent;
 }
 
 .descriptionMainHouse {
-    height: 40%;
-    
+    position:relative;
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
 }
 .descriptionMainHouse p{
     margin-left:0.5rem;
-}
-
-.mainHouseImg {
-    height: 60%;
-    object-fit: cover;
 }
 
 .more{
@@ -305,31 +311,38 @@ input::placeholder{
     border-radius: 30px;
     box-shadow: 5px 5px 5px lightgrey;
     width: 25%;
-    height: 500px;
     margin:1rem;
 }
 .activitiesSmall {
     overflow: hidden;
     border-radius: 30px;
     box-shadow: 5px 5px 5px lightgrey;
-    height: 240px;
     margin-top:1rem;
 }
 .containerAct {
     width:25%;
 }
-.activitiesImg{
-    height:80%;
+.activitiesImgBig{  
+    height:500px;  
 }
-
+.activitiesImgSmall {
+    height: 215px;
+}
+.descriptionAct {
+    position: relative;
+    padding:0.5rem;
+    background-color: white;
+    vertical-align:middle;
+}
 
 /*Tablet*/
 @media (max-width: 1400px) {
-    .mainHousing {
-        display: flex;
-        flex-flow: column;
+    .housing{
+        flex-direction:column-reverse;
     }
-
+    .mainHousing{
+        width:93%;
+    }
     .activity {
         flex-wrap: wrap;
     }
@@ -391,12 +404,15 @@ input::placeholder{
 
     .sign {
         order: 2;
-        margin: 5px;
+        margin: 5px 15px;
+        display:flex;
+        align-items:center;
     }
 
     .menuButton {
         width: 100%;
         border-block-end: 2px solid lightgrey;
+        text-align:center;
     }
 
         .menuButton:hover {
