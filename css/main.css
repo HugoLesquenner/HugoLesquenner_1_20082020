@@ -125,7 +125,22 @@ input::placeholder{
     
 }
 
-#search {
+.searchButton {
+    visibility:visible;
+    background-color: rgb(16,111,252);
+    border: none;
+    border-radius: 0 15px 15px 0;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.searchButtonSmall {
+    visibility: hidden;
     background-color: rgb(16,111,252);
     border: none;
     border-radius: 0 15px 15px 0;
@@ -141,14 +156,14 @@ input::placeholder{
 .icon {
     height: 35px;
     border-radius: 50%;
-    border-color:transparent;
+    border-color: transparent;
     padding: 10px;
     background-color: rgb(222,235,255);
 }
 
 .trendIcon {
+    float: right;
     height: 30px;
-    
 }
 
 .filters {
@@ -221,7 +236,7 @@ input::placeholder{
 
 .mainHousing {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns:repeat(3,1fr);
     grid-gap: 2rem;
     width: 75%;
     background-color: rgb(242,242,242);
@@ -251,6 +266,12 @@ input::placeholder{
     height: 60%;
     object-fit: cover;
 }
+
+.more{
+    font-weight:bold;
+    cursor:pointer;
+}
+
 .trendHousing {
     background-color: rgb(242,242,242);
     border-radius: 30px;
@@ -277,9 +298,7 @@ input::placeholder{
 
 .activity {
     display: flex;
-    
-    width: 100%;
-}
+ }
 
 .activitiesBig {
     overflow: hidden;
@@ -287,7 +306,7 @@ input::placeholder{
     box-shadow: 5px 5px 5px lightgrey;
     width: 25%;
     height: 500px;
-    margin: 1rem;
+    margin:1rem;
 }
 .activitiesSmall {
     overflow: hidden;
@@ -304,8 +323,24 @@ input::placeholder{
 }
 
 
+/*Tablet*/
+@media (max-width: 1400px) {
+    .mainHousing {
+        display: flex;
+        flex-flow: column;
+    }
 
+    .activity {
+        flex-wrap: wrap;
+    }
 
+    .activitiesBig {
+        width:45%;
+    }
+    .containerAct {
+        width: 50%;
+    }
+}
 
 
 /*Smartphone*/
@@ -313,9 +348,11 @@ input::placeholder{
     body {
         margin:0;
     }
+    
     header{
         margin:0;
     }
+    
     main {
         margin:0;
     }
@@ -329,6 +366,11 @@ input::placeholder{
         display: block;
         
     }
+    
+    h1{
+        margin-left:1rem;
+    }
+
     .logo {
         max-width: 100%;
         height: 75px;
@@ -363,6 +405,27 @@ input::placeholder{
             border-block-end: 2px solid rgb(16,111,252);
         }
 
+    .h {
+        margin-left: 1rem;
+    }
+        
+    .search{
+        margin-left:1rem;
+    }
+
+    .searchButton {
+        visibility:hidden;
+    }
+    
+    .searchButtonSmall {
+        visibility:visible;
+        margin-left:-8rem;
+    }
+
+    .infoResult{
+        margin-left:1rem;
+    }
+
     .housing {
         display: flex;
         flex-wrap: wrap-reverse;
@@ -375,34 +438,39 @@ input::placeholder{
     .mainHousing {
         display: block;
         width: 100%;
-        padding:0;
+        padding:1rem;
         background-color: white;
     }
 
     .mainHouse {
         width: 100%;
-        margin: 1rem;
+        height:275px;
+        margin-bottom:2rem;
+    }
+
+    .descriptionMainHouse{
+        margin-left:1rem;
     }
 
     .trendHousing {
         background-color: rgb(242,242,242);
         border-radius: 0;
-        padding:0;
-
+        padding:1rem;
     }
 
     .activity {
         display: block;
-        width:100%;
     }
-    
+
+    #activity {
+        padding: 1rem;
+    }
+   
     .activitiesBig {
-        width: 100%;
-        margin:1rem;
-    }
-    
-    .activitiesSmall {
-        margin: 1rem;
+        margin:0;
+        margin-top:1rem;
+        width:100%;
+        height:250px;
     }
 
     .containerAct {
@@ -410,6 +478,4 @@ input::placeholder{
     }
 }
 
-/*Tablet*/
-@media (max-width: 991.98px) {
-}
+
